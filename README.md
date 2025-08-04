@@ -28,6 +28,8 @@ Risks:
 Ports 135, 139, 445 (Windows Services): Frequently exploited by malware like WannaCry and NotPetya. Can allow remote code execution, lateral movement, or unauthorized file access.
 Port 3306 (MySQL): If the database is externally exposed and credentials are weak, it’s vulnerable to SQL injection, data theft, or remote access.
 
+save the result for the future phase using command nmap -sS 10.24.56.0/24 -oN portscan_results.txt
+
 Recommendations:
 >. Close unused ports or restrict them with firewall rules.
 >. Disable SMB v1, NetBIOS, or unused Windows services.
